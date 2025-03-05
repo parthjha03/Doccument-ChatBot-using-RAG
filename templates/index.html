@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="chat-header">
+            <h1>AI Document Assistant</h1>
+        </header>
+        
+        <div class="chat-container">
+            <div id="chat-box" class="chat-box">
+                <div class="welcome-message">
+                    <i class="fas fa-robot"></i>
+                    <h2>Hello! I'm your AI assistant</h2>
+                    <p>Upload a document to get started</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-upload-container">
+            <div class="input-container">
+                <input type="text" id="chat-input" placeholder="Type your message here...">
+                <button id="voice-button" class="voice-button">
+                    <i class="fas fa-microphone"></i>
+                </button>
+                <button id="send-button" class="send-button">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+            <div id="recording-indicator" class="recording-indicator hidden">
+                <div class="recording-pulse"></div>
+                <span>Listening...</span>
+            </div>
+
+            <form id="upload-form" class="upload-container">
+                <div class="drag-drop-area" id="drag-drop-area">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <label for="file-input" class="upload-label">
+                        Drop your document here or click to upload
+                    </label>
+                    <input type="file" id="file-input" class="file-input" accept=".pdf,.doc,.docx,.txt">
+                    <p id="file-selected-message" class="file-selected-message">No file chosen</p>
+                </div>
+                <div class="upload-actions">
+                    <button type="submit" class="upload-button">
+                        <i class="fas fa-upload"></i> Upload Document
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/static/js/scripts.js"></script>
+</body>
+</html>
