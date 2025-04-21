@@ -42,7 +42,7 @@ LLM APIs / Pinecone
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/parthjha03/Doccument-ChatBot-using-RAG.git
+   git clone https://github.com/parthjha03/DocuAI.git
    cd docuai
    ```
 
@@ -68,7 +68,7 @@ LLM APIs / Pinecone
 
 5. **Run the application:**
    ```sh
-   python app2.py
+   python app.py
    ```
 
 6. **Access the app:**
